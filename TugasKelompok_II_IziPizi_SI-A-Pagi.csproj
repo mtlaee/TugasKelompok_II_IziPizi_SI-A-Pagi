@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E8C5C994-6B98-4FDA-AD89-185C24634689}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TugasKelompok_II_IziPizi_SI_A_Pagi</RootNamespace>
+    <AssemblyName>TugasKelompok_II_IziPizi_SI-A-Pagi</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BarberB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BarberB.Designer.cs">
+      <DependentUpon>BarberB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Browse\frmbrowseBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Browse\frmbrowseBooking.Designer.cs">
+      <DependentUpon>frmbrowseBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Browse\frmBrowseCabang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Browse\frmBrowseCabang.Designer.cs">
+      <DependentUpon>frmBrowseCabang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Browse\frmBrowseKaryawan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Browse\frmBrowseKaryawan.Designer.cs">
+      <DependentUpon>frmBrowseKaryawan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Browse\frmBrowsePelanggan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Browse\frmBrowsePelanggan.Designer.cs">
+      <DependentUpon>frmBrowsePelanggan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Browse\frmBrowsePembayaran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Browse\frmBrowsePembayaran.Designer.cs">
+      <DependentUpon>frmBrowsePembayaran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Browse\frmBrowsePaket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Browse\frmBrowsePaket.Designer.cs">
+      <DependentUpon>frmBrowsePaket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBooking.Designer.cs">
+      <DependentUpon>frmBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPelanggan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPelanggan.Designer.cs">
+      <DependentUpon>frmPelanggan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPembayaran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPembayaran.Designer.cs">
+      <DependentUpon>frmPembayaran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBarber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBarber.Designer.cs">
+      <DependentUpon>frmBarber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\crDaftarPakerLayanan.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crDaftarPakerLayanan.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\crFakturPembayaran.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crFakturPembayaran.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\crInformasiCabang.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crInformasiCabang.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\crInformasiKaryawan.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crInformasiKaryawan.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\crInformasiPelanggan.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crInformasiPelanggan.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\crLaporanBooking.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crLaporanBooking.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\crLaporanPembayaran.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crLaporanPembayaran.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\dsBarbershopAndi.cs">
+      <DependentUpon>dsBarbershopAndi.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\dsBarbershopAndi.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsBarbershopAndi.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frmViewr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\frmViewr.Designer.cs">
+      <DependentUpon>frmViewr.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BarberB.resx">
+      <DependentUpon>BarberB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Browse\frmbrowseBooking.resx">
+      <DependentUpon>frmbrowseBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Browse\frmBrowseCabang.resx">
+      <DependentUpon>frmBrowseCabang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Browse\frmBrowseKaryawan.resx">
+      <DependentUpon>frmBrowseKaryawan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Browse\frmBrowsePaket.resx">
+      <DependentUpon>frmBrowsePaket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Browse\frmBrowsePelanggan.resx">
+      <DependentUpon>frmBrowsePelanggan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Browse\frmBrowsePembayaran.resx">
+      <DependentUpon>frmBrowsePembayaran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBooking.resx">
+      <DependentUpon>frmBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPelanggan.resx">
+      <DependentUpon>frmPelanggan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPembayaran.resx">
+      <DependentUpon>frmPembayaran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBarber.resx">
+      <DependentUpon>frmBarber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Report\crDaftarPakerLayanan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crDaftarPakerLayanan.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\crFakturPembayaran.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crFakturPembayaran.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\crInformasiCabang.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crInformasiCabang.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\crInformasiKaryawan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crInformasiKaryawan.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\crInformasiPelanggan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crInformasiPelanggan.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\crLaporanBooking.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crLaporanBooking.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\crLaporanPembayaran.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crLaporanPembayaran.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\frmViewr.resx">
+      <DependentUpon>frmViewr.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Report\dsBarbershopAndi.xsc">
+      <DependentUpon>dsBarbershopAndi.xsd</DependentUpon>
+    </None>
+    <None Include="Report\dsBarbershopAndi.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsBarbershopAndi.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\dsBarbershopAndi.xss">
+      <DependentUpon>dsBarbershopAndi.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\IMG_20210115_152218.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_20210115_182104.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contacts-16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchase-order-32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banknotes-32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paper-32 %281%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barber-shop-24.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group-24.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\conference-24.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barbers-pole-24.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchase-order-24.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money-24.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\available-updates-32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash-2-32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save-32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report-3-32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-9-24.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recurring-appointment-24.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout-32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock-32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-4-32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reviewer-32.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
